@@ -2,6 +2,7 @@ const express = require('express');
 const mongoose = require('mongoose');
 const bodyParser = require('body-parser');
 
+const port = process.env.PORT || 3001;
 const app = express();
 
 // MongoDB connection
@@ -45,3 +46,4 @@ app.post('/submit-form', async (req, res) => {
 });
 
 
+app.listen(port, () => console.log(`Example app listening on port ${port}!`));
