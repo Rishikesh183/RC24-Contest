@@ -6,7 +6,7 @@ const port = 3000;
 const app = express();
 
 // MongoDB connection
-mongoose.connect('mongodb+srv://rishikeshdevarashetty:6tfGkzNgwmg8rAe2@cluster0.qwkjqna.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0');
+mongoose.connect('mongodb+srv://vishalvardhan24816:QGfPLnD8XsVnTXis@cluster0.7hzg2mw.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0');
 const db = mongoose.connection;
 db.on('error', console.error.bind(console, 'MongoDB connection error:'));
 db.once('open', () => {
