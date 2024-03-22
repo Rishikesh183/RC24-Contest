@@ -3,10 +3,9 @@ const mongoose = require('mongoose');
 const bodyParser = require('body-parser');
 
 const app = express();
-const PORT = process.env.PORT || 3000;
 
 // MongoDB connection
-mongoose.connect('mongodb://localhost:27017/cricmawa_rc24', {
+mongoose.connect('mongodb+srv://rishikeshdevarashetty:6tfGkzNgwmg8rAe2@cluster0.qwkjqna.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0', {
   useNewUrlParser: true,
   useUnifiedTopology: true
 });
@@ -48,6 +47,4 @@ app.post('/submit-form', async (req, res) => {
   }
 });
 
-app.listen(PORT, () => {
-  console.log(`Server is running on http://localhost:${PORT}`);
-});
+
