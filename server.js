@@ -7,7 +7,6 @@ const app = express();
 // MongoDB connection
 mongoose.connect('mongodb+srv://rishikeshdevarashetty:6tfGkzNgwmg8rAe2@cluster0.qwkjqna.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0', {
   useNewUrlParser: true,
-  useUnifiedTopology: true
 });
 const db = mongoose.connection;
 db.on('error', console.error.bind(console, 'MongoDB connection error:'));
