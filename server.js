@@ -38,7 +38,7 @@ app.post('/submit-form', async (req, res) => {
   });
   try {
       await newSubmission.save();
-      alert('Form submitted successfully!');
+      res.status(200).json({ message: 'Form submitted successfully!' });
   } catch (error) {
       console.error('Error saving submission:', error);
       res.status(500).json({ error: 'An error occurred while saving the submission.' });
