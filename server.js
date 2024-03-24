@@ -4,7 +4,7 @@ const bodyParser = require('body-parser');
 
 const port = 3000;
 const app = express();
-
+/*
 // MongoDB connection
 mongoose.connect('mongodb+srv://vishalvardhan24816:QGfPLnD8XsVnTXis@cluster0.7hzg2mw.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0');
 const db = mongoose.connection;
@@ -44,6 +44,5 @@ app.post('/submit-form', async (req, res) => {
       res.status(500).json({ error: 'An error occurred while saving the submission.' });
   }
 });
-
-
+*/
 app.listen(port, () => console.log(`Example app listening on port ${port}!`));
