@@ -23,9 +23,9 @@ const Submission = mongoose.model('Submission', SubmissionSchema);
 
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
-
+*/
 app.use(express.static('public'));
-
+/*
 app.post('/submit-form', async (req, res) => {
   const { name, email, Age, message, phone } = req.body;
 
