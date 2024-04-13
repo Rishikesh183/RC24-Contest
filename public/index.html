@@ -9,86 +9,38 @@
 </head>
 
 <body>
-    <nav>
-        <div class="left">
-            <ul>
-                <span>
-                    <img src="logo.png" alt="">
-                </span>
-                <li><a href="https://www.instagram.com/cricmawa?igsh=cGFleHVqeGNwbnRz" target="_blank">Instagram</a>
-                </li>
-                <li><a href="https://x.com/cric_mawa_twts?t=oQdyXE2IQZqzBsf81tR-SA&s=09" target="_blank">Twitter</a>
-                </li>
-                <li><a href="https://chat.whatsapp.com/EONXlY6J7McHan5gt1Poz1" target="_blank">Whatsapp</a></li>
-            </ul>
-        </div>
+        <nav>
+            <div class="left">
+                <ul>
+                    <span>
+                        <img src="logo.png" alt="">
+                    </span>
+                    <li><a href="https://www.instagram.com/cricmawa?igsh=cGFleHVqeGNwbnRz" target="_blank">Instagram</a></li>
+                    <li><a href="https://x.com/cric_mawa_twts?t=oQdyXE2IQZqzBsf81tR-SA&s=09" target="_blank">Twitter</a></li>
+                    <li><a href="https://chat.whatsapp.com/EONXlY6J7McHan5gt1Poz1" target="_blank">Whatsapp</a></li>
+                </ul>
+            </div>
 
-    </nav>
+        </nav>
 
-    <h1>RC24 Contest schedule</h1>
-    <h2>Round 2</h2>
-    <table>
-        <thead>
-            <tr>
-                <th>Player 1</th>
-                <th>Player 2</th>
-                <th>Date & Time</th>
-                <th>Winner</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td>proanif</td>
-                <td>uttam sampath</td>
-                <td>sun 7:30pm</td>
-                <td>proanif</td>
-            </tr>
-            <tr>
-                <td>sai vamsi</td>
-                <td>Naveen Hitman</td>
-                <td>sun 6pm</td>
-                <td>Naveen Hitman</td>
-            </tr>
-            <tr>
-                <td>madhav</td>
-                <td>Raghu</td>
-                <td>sun 8:30pm</td>
-                <td>madhav</td>
-            </tr>
-            <tr>
-                <td>suraj</td>
-                <td>calm bee</td>
-                <td>sun 8pm</td>
-                <td>Suraj</td>
-            </tr>
-            <tr>
-            <tr>
-                <td>Jayakrishna</td>
-                <td>Teja manchikalapudi</td>
-                <td>Mon 6:30pm</td>
-                <td>Jayakrishna</td>
-            </tr>
-            <tr>
-            <tr>
-                <td>Lohit</td>
-                <td>BADCOLONEL15893</td>
-                <td>Mon 9:30pm</td>
-                <td>Lohit</td>
-            </tr>
-            <tr>
-                <td>AMOGH VARSHA</td>
-                <td>BadGem85588 </td>
-                <td>Mon 6pm</td>
-                <td>AMOGH VARSHA</td>
-            </tr>
-            <tr>
-                <td>Hemanth Abhay</td>
-                <td>Aravind Reddy</td>
-                <td>Mon 7pm</td>
-                <td>Aravind Reddy</td>
-            </tr>
-        </tbody>
-    </table>
+    <div class="container">
+        <h2>Cricmawa Trivia Competion</h2>
+        <form  id="customForm" action="/submit-form" method="POST">
+            <label for="name">UserName :</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email :</label>
+            <input type="text" id="email" name="email" required>
+
+            <label for="Age">Age :</label>
+            <input type="text" id="Age" name="Age" required>
+
+            <label for="phone">Phone Number:</label>
+            <input type="tel" id="phone" name="phone" pattern="[0-9]{3}[0-9]{3}[0-9]{4}" required><br><br>
+
+            <input type="submit" value="Submit">
+        </form>
+    </div>
     <script src="app.js"></script>
 
 </body>
