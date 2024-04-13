@@ -15,7 +15,6 @@ const SubmissionSchema = new mongoose.Schema({
   name: String,
   email: String,
   Age: Number,
-  message: String,
   phone: String
 });
 const Submission = mongoose.model('Submission', SubmissionSchema);
@@ -30,7 +29,6 @@ app.post('/submit-form', async (req, res) => {
       name,
       email,
       Age,
-      message,
       phone
   });
   try {
