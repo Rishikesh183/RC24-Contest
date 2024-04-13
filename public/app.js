@@ -1,4 +1,4 @@
-/*
+
 document.getElementById('customForm').addEventListener('submit', function (event) {
     var name = document.getElementById('name').value.trim();
     var email = document.getElementById('email').value.trim();
@@ -16,4 +16,3 @@ document.getElementById('customForm').addEventListener('submit', function (event
         event.preventDefault();
     }
 });
-*/
